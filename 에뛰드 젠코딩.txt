@@ -1,0 +1,23 @@
+에띄드 젠코딩
+<-- header -->
+header>div.wrap.flex>(h1.h3>a)+(ul>li*5>a)+div.flex>a.search+a.ham
+<-- 타이틀 -->
+div#title>div.wrap>a+h2.h2+p.p
+<-- 섹션 프로덕트 -->
+section#product>div.wrap>div.flex>a*5>h2.h5+p.p
+<--섹션 makerup look-->
+section#look>div.wrap.flex.flex-column>(div.first.flex.flex-column>h2.h4+p.p+a.more)+div.second.flex.flex-column>a+h3.hide+div.container>a*2
+<-- 섹션 순정 -->
+section#soonjung>div.wrap.flex.flex-column>h2.h4+p.p+a.more+div.contaner>ul.list>li*6>a.img+div.subcontainer>(h3.h5>a)+p.hash.p+p.price.p
+<--섹션 gift-->
+section#gift>div.wrap.flex.flex-column>h2.h4+p.p+a.more+ul.list.flex>li*4>a
+<--섹션 new-->
+section#new>div.wrap.flex.flex-column>(div.first.flex.flex-column>h2.h4+p.p+a.more)+(ul.list>li*6>a.img+div.subcontainer>(h3.h5>a)+p.hash.p+p.price.p)+div.arrow>a.left+a.right
+<--섹션 sns-->
+section#sns>div.wrap.flex>h2.h3+(div.instsar>div.conin>h3.h4+a)+div.tiktok>(ul.list>li*4>a)+div.contik>h3.h4+a
+<--섹션 news-->
+section#news>div.wrap.flex.flex-column>(div.first.flex.flex-column>h2.h4+p.p+a.more)+div.container>(div.arrow>a.left+a.right)+div.hidden>ul.list>li*4>a>h3.h4
+<--footer-->
+footer>div.wrap>(div.first>(div.noti>h2+a*2)+div.fam>select+select)+(div.second>ul.list>li*5>a)+(div.third>(div.info>address)+div.contact>ul>li*3>span)+div.fourth>p+ul.cowork>li*4>a
+<--사이트 맵-->
+div.sitemap*9>h2+ul>li*3>a
