@@ -1,0 +1,194 @@
+section#soonjung {
+  
+}
+section#soonjung div.wrap {
+  
+  padding-bottom: 50px;
+}
+section#soonjung div.wrap div.first{
+  
+  line-height: 3;
+}
+section#soonjung div.wrap div.first > h2 {
+
+}
+section#soonjung div.wrap div.first > h2::before{
+  content: "";
+  width: 36px;
+  height: 45px;
+  display: block;
+  background-image: url(../img/soonjung.png);
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section#soonjung div.wrap div.first > p {
+  
+}
+section#soonjung div.wrap div.first > a {
+  margin-top: 30px;
+}
+section#soonjung div.wrap div.container {
+  display: flex;
+  justify-content: end;
+  margin-top: 60px;
+  position: relative;
+}
+section#soonjung div.wrap div.container ul.list {
+  width: 50%;
+  padding-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  position: relative;
+}
+section#soonjung div.wrap div.container::before{
+  content: "";
+  display: block;
+  height: 1526.25px;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  background-image: url(../img/soonjungul.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section#soonjung div.wrap div.container ul.list>li {
+  width: 50%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+}
+section#soonjung div.wrap div.container ul.list>li>ul {
+
+  position: relative;
+  height: 395.75px;
+}
+section#soonjung div.wrap div.container ul.list>li>ul>li {
+  width: 100%;
+  overflow: hidden;
+  height: 395.75px;
+  position: absolute;
+}
+section#soonjung div.wrap div.container ul.list>li>ul>li:hover {
+
+}
+section#soonjung div.wrap div.container ul.list>li>ul>li:nth-child(2) {
+  
+}
+section#soonjung div.wrap div.container ul.list li ul li:nth-child(1) a.img {
+  display: block;
+  width: 100%;
+  height: 395.75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  transition: all 0.5s;
+}
+section#soonjung div.wrap div.container ul.list li ul li:nth-child(1) a.img:hover {
+  
+}
+section#soonjung div.wrap div.container ul.list li ul li:nth-child(2) a.img {
+  display: block;
+  width: 100%;
+  height: 395.75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s;
+}
+section#soonjung div.wrap div.container ul.list li ul li:nth-child(2) a.img:hover{
+  
+  transform: scale(110%);
+}
+section#soonjung div.wrap div.container ul.list li ul li:nth-child(1) a.img::before{
+  content: "NEW";
+  width: 45px;
+  height: 28px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  line-height: 27px;
+  background-color: #333333;
+  color: #F5E2D2;
+  box-sizing: border-box;
+  font-weight: 500;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(1) ul li:nth-child(1) a.img{
+  background-image: url(../img/soonjungli1a.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(2) ul li:nth-child(1) a.img{
+  background-image: url(../img/soonjungli2a.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(3) ul li:nth-child(1) a.img{
+  background-image: url(../img/soonjungli3a.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(4) ul li:nth-child(1) a.img{
+  background-image: url(../img/soonjungli4a.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(5) ul li:nth-child(1) a.img{
+  background-image: url(../img/soonjungli5a.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(6) ul li:nth-child(1) a.img{
+  background-image: url(../img/soonjungli6a.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(1) ul li:nth-child(2) a.img{
+  background-image: url(../img/soonjungli1b.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(2) ul li:nth-child(2) a.img{
+  background-image: url(../img/soonjungli2b.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(3) ul li:nth-child(2) a.img{
+  background-image: url(../img/soonjungli3b.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(4) ul li:nth-child(2) a.img{
+  background-image: url(../img/soonjungli4b.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(5) ul li:nth-child(2) a.img{
+  background-image: url(../img/soonjungli5b.jpg);
+}
+section#soonjung div.wrap div.container ul.list li:nth-child(6) ul li:nth-child(2) a.img{
+  background-image: url(../img/soonjungli6b.jpg);
+}
+section#soonjung div.wrap div.container ul.list li div.subcontainer {
+  
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  background-color: #FAFAFA;
+}
+section#soonjung div.wrap div.container ul.list li div.subcontainer h3 {
+  
+  order: 2;
+  padding: 0;
+}
+section#soonjung div.wrap div.container ul.list li div.subcontainer h3 a {
+  
+}
+section#soonjung div.wrap div.container ul.list li div.subcontainer p.hash {
+  
+  order: 1;
+  padding: 0;
+  margin-bottom: 3px;
+  color: #79797D;
+}
+section#soonjung div.wrap div.container ul.list li div.subcontainer p.price {
+  
+  order: 3;
+  margin-top: 20px;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  padding: 10px 5px;
+  background-color: white;
+}
+.zdown{
+  z-index: 0;
+}
+.zup{
+  z-index: 1;
+}

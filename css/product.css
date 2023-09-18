@@ -1,0 +1,46 @@
+section#product {
+  
+}
+section#product div.wrap {
+  background-color: #FBF3EB;
+}
+section#product div.wrap h2 {
+  
+}
+section#product div.wrap div {
+  
+}
+section#product div.wrap div a {
+  width: calc( 100% / 5 );
+  text-align: center;
+  line-height: 4;
+}
+section#product div.wrap div a::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 380px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section#product div.wrap div a:nth-child(1)::before{
+  background-image: url(../img/product1.png);
+}
+section#product div.wrap div a:nth-child(2)::before{
+  background-image: url(../img/product2.png);
+}
+section#product div.wrap div a:nth-child(3)::before{
+  background-image: url(../img/product3.png);
+}
+section#product div.wrap div a:nth-child(4)::before{
+  background-image: url(../img/product4.png);
+}
+section#product div.wrap div a:nth-child(5)::before{
+  background-image: url(../img/product5.png);
+}
+section#product div.wrap div a h3 {
+  
+}
+section#product div.wrap div a p {
+  
+}

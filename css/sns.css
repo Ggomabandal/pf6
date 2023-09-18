@@ -1,0 +1,125 @@
+section#sns {
+  
+}
+section#sns div.wrap {
+  height: 1000px;
+  position: relative;
+  box-sizing: border-box;
+}
+section#sns div.wrap h2 {
+  position: absolute;
+  bottom: 13%;
+  right: 57%;
+  text-align: end;
+}
+section#sns div.wrap div.instar {
+  width: 70%;
+}
+section#sns div.wrap div.instar div.conin {
+  display: flex;
+  flex-direction: column;
+  width: 545px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+section#sns div.wrap div.instar div.conin h3 {
+  width: 545px;
+}
+section#sns div.wrap div.instar div.conin h3 span{
+  
+}
+section#sns div.wrap div.instar div.conin div.img {
+  width: 545px;
+  overflow: hidden;
+}
+section#sns div.wrap div.instar div.conin div.img ul{
+  
+  display: flex;
+  width: 500%;
+}
+section#sns div.wrap div.instar div.conin div.img ul li{
+  
+}
+section#sns div.wrap div.instar div.conin div.img ul li a {
+  width: 545px;
+  height: 545px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 0;
+}
+section#sns div.wrap div.instar div.conin div.img ul li:nth-child(1) a{
+  background-image: url(../img/insta1.jpg);
+}
+section#sns div.wrap div.instar div.conin div.img ul li:nth-child(2) a{
+  background-image: url(../img/insta2.jpg);
+}
+section#sns div.wrap div.instar div.conin div.img ul li:nth-child(3) a{
+  background-image: url(../img/insta3.jpg);
+}
+section#sns div.wrap div.instar div.conin div.img ul li:nth-child(4) a{
+  background-image: url(../img/insta4.jpg);
+}
+section#sns div.wrap div.instar div.conin div.img ul li:nth-child(5) a{
+  background-image: url(../img/insta5.jpg);
+}
+section#sns div.wrap div.tiktok {
+  width: 30%;
+  background: #F4D8DB;
+  padding: 100px 30px 30px 100px;
+  box-sizing: border-box;
+}
+section#sns div.wrap div.tiktok ul.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+section#sns div.wrap div.tiktok ul.list li {
+  
+}
+section#sns div.wrap div.tiktok ul.list li a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  font-size: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section#sns div.wrap div.tiktok ul.list li:nth-child(1) a{
+  background-image: url(../img/instar.png);
+}
+section#sns div.wrap div.tiktok ul.list li:nth-child(2) a{
+  background-image: url(../img/facebook.png);  
+}
+section#sns div.wrap div.tiktok ul.list li:nth-child(3) a{
+  background-image: url(../img/utube.png);  
+}
+section#sns div.wrap div.tiktok ul.list li:nth-child(4) a{
+  background-image: url(../img/tt.png);  
+}
+section#sns div.wrap div.tiktok div.contik {
+  position: absolute;
+  right: 57%;
+  top: 10%;
+}
+section#sns div.wrap div.tiktok div.contik h3 {
+  
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -150px;
+  top: 113px;
+}section#sns div.wrap div.tiktok div.contik h3 span {
+  
+}
+section#sns div.wrap div.tiktok div.contik a {
+  width: 350px;
+  height: 700px;
+  display: block;
+  background-image: url(../img/tiktok.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 0;
+}

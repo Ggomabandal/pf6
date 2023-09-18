@@ -1,0 +1,100 @@
+section#news {
+  
+}
+section#news div.wrap {
+  padding: 100px 0 200px 0;
+  border-top: 1px solid #D2D2D2;
+}
+section#news div.wrap div.first {
+  align-items: center;
+}
+section#news div.wrap div.first h2 {
+  
+}
+section#news div.wrap div.first h2::before{
+  content: "";
+  width: 38px;
+  height: 65px;
+  display: block;
+  background-image: url(../img/news.png);
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;  
+}
+section#news div.wrap div.first a.more {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+section#news div.wrap div.container {
+  
+  position: relative;
+}
+section#news div.wrap div.container div.arrow {
+  
+}
+section#news div.wrap div.container div.arrow a{
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;  
+  background-position: center;
+  position: absolute;
+  top: calc( 50% - 15px );
+}
+section#news div.wrap div.container div.arrow a.left {
+  
+
+  transform: rotate(180deg);
+  left: calc((100% - 1440px) / 2 - 30px);
+}
+section#news div.wrap div.container div.arrow a.right {
+  
+
+  right: calc((100% - 1440px) / 2 - 30px);
+}
+section#news div.wrap div.container div.hidden {
+  width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section#news div.wrap div.container div.hidden ul.list {
+  display: flex;
+  width: 200%;
+}
+section#news div.wrap div.container div.hidden ul.list li {
+  width: 720px;
+  box-sizing: border-box;
+  height: 433px;
+  overflow: hidden;
+  margin: 0px 10px;
+}
+section#news div.wrap div.container div.hidden ul.list li a {
+  width: 100%;
+  height: 433px;
+  display: flex;
+  align-items: end;
+  transition: all 0.5s;
+}
+section#news div.wrap div.container div.hidden ul.list li a:hover{
+  
+  transform: scale(110%);
+}
+section#news div.wrap div.container div.hidden ul.list li:nth-child(1) a{
+  background-image: url(../img/news1.jpg);
+}
+section#news div.wrap div.container div.hidden ul.list li:nth-child(2) a{
+  background-image: url(../img/news2.jpg);
+}
+section#news div.wrap div.container div.hidden ul.list li:nth-child(3) a{
+  background-image: url(../img/news3.jpg);
+}
+section#news div.wrap div.container div.hidden ul.list li:nth-child(4) a{
+  background-image: url(../img/news4.jpg);
+}
+section#news div.wrap div.container div.hidden ul.list li a h3 {
+  
+  padding: 20px;
+  color: white;
+}

@@ -1,0 +1,60 @@
+header {
+  
+}
+header div.wrap {
+  padding: 50px 100px 20px 100px;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.6);
+}
+header div.wrap div.gnb h1 {
+  background-image: url(../img/etude.png);
+  background-size: contain;
+  font-size: 0;
+  width: 104px;
+  height: 51px;
+}
+header div.wrap div.gnb h1 a {
+  display: none;
+}
+header div.wrap div.gnb ul {
+  padding-left: 50px;
+  gap: 20px;
+}
+header div.wrap div.gnb ul li {
+  
+}
+header div.wrap div.gnb ul li a {
+  padding: 0 20px;
+  font-weight: 500;
+  position: relative;
+  padding: 0 20px;
+  color: #333333;
+}
+header div.wrap div.gnb ul li:nth-child(1) a:after{
+  content: "NEW";
+  color: red;
+  font-size: 8px;
+  position: absolute;
+  font-weight: 300;
+  right: -4px;
+  top: -2px;
+}
+header div.wrap div {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+header div.wrap div a.search {
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  background-image: url(../img/search.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header div.wrap div a.ham {
+  
+}

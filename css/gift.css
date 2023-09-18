@@ -1,0 +1,84 @@
+section#gift {
+  
+}
+section#gift div.wrap {
+  padding-bottom: 50px;
+}
+section#gift div.wrap div.first{
+  padding-top: 100px;
+  width: 1600px;
+  border-top: 1px solid #D2D2D2;
+  line-height: 3;
+}
+section#gift div.wrap div.first h2 {
+
+}
+section#gift div.wrap div.first h2::before{
+  content: "";
+  width: 38px;
+  height: 65px;
+  display: block;
+  background-image: url(../img/gift.png);
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;  
+}
+section#gift div.wrap div.first p {
+  
+}
+section#gift div.wrap div.first a.more {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+section#gift div.wrap ul.list {
+  width: 1600px;
+  justify-content: space-between;
+  gap: 15px;
+}
+section#gift div.wrap ul.list li {
+  width: 25%;
+  height: 396.25px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+section#gift div.wrap ul.list li a {
+  width: 100%;
+  display: block;
+  height: 396.25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 0;
+  transition: all 0.5s;
+}
+section#gift div.wrap ul.list li a:hover{
+  transform: scale(110%);
+}
+section#gift div.wrap ul.list li::before{
+  content: "톡별";
+  width: 45px;
+  height: 28px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  line-height: 27px;
+  background-color: #FEDA00;
+  color: black;
+  font-weight: 500;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 1;
+}
+section#gift div.wrap ul.list li:nth-child(1) a{
+  background-image: url(../img/gift1.jpg);
+}
+section#gift div.wrap ul.list li:nth-child(2) a{
+  background-image: url(../img/gift2.jpg);
+}
+section#gift div.wrap ul.list li:nth-child(3) a{
+  background-image: url(../img/gift3.jpg);
+}
+section#gift div.wrap ul.list li:nth-child(4) a{
+  background-image: url(../img/gift4.jpg);
+}
