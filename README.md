@@ -4,7 +4,7 @@ ETuDE 홈페이지를 참고하여 개인 작업물로 제작하였습니다.
 ## 원본 웹사이트
 <img src="https://github.com/Ggomabandal/pf6/assets/142555219/76dfd00a-0c99-4a40-9d59-54c8340c74c8.png" width="400" height="200"/>
 
-[https://www.cgv.co.kr/#none](https://www.etude.com/)
+https://www.etude.com/
 
 ## 클론 웹사이트 스크린 샷 링크
 클론코딩페이지 url : https://ggomabandal.github.io/pf5/
