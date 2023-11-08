@@ -9,7 +9,7 @@ body{
   height: 100%
 }
 .wrap{
-  max-width: 1903px;
+  width: 1903px;
   margin: 0 auto;  
 }
 .hide{
