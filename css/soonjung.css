@@ -97,7 +97,7 @@ section#soonjung div.wrap div.container ul.list li ul li:nth-child(2) a.img {
   position: absolute;
   top: 0;
   z-index: 0;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 section#soonjung div.wrap div.container ul.list li ul li:nth-child(2) a.img:hover{
   

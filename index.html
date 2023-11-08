@@ -22,24 +22,118 @@
     <link rel="stylesheet" href="css/sns.css">
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- 자바스크립트 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"type=text/javascript></script>
     <script type="text/javascript">
 
     </script>
+    <!-- 헤더 css -->
+    <script>
+        $(document).ready(function(){
+            $("header div.wrap div.gnb ul li:nth-child(1) a").mouseenter(function(){
+                $("header div.wrap div.navwrap").stop().delay(350).slideDown();
+                $("header div.wrap").addClass("headerbackc");
+                $("header div.wrap div.brandgnbewrap").hide();
+                return false;
+            });
+            $(".control").mouseenter(function(){
+                $("header div.wrap div.navwrap").stop().slideUp(function(){
+                    $("header div.wrap").delay(1000).removeClass("headerbackc");
+                });
+            });
+        });
+        $(document).ready(function(){
+            $("header div.wrap div.gnb ul li:nth-child(2) a").mouseenter(function(){
+                $("header div.wrap div.brandgnbewrap").stop().delay(350).slideDown();
+                $("header div.wrap").addClass("headerbackc");
+                $("header div.wrap div.navwrap").hide();
+                return false;
+            });
+            $(".control").mouseenter(function(){
+                $("header div.wrap div.brandgnbewrap").stop().slideUp(function(){
+                    $("header div.wrap").delay(1000).removeClass("headerbackc");
+                });
+            });
+        });
+        
+    </script>
+    <!-- 헤더 css -->
+    <script>
+        $(document).ready(function(){
+            var ws=$(window).scrollTop();
+            var titleY=$("#title").offset().top;
+            $(window).scroll(function(){
+                ws=$(window).scrollTop();
+                if(ws>titleY){
+                    $("header div.wrap").addClass("down");
+                }
+                else{
+                    $("header div.wrap").removeClass("down");
+                }
+            });
+        });
+    </script>
     <!-- 순정 이미지 z-index -->
     <script src="js/soonimg.js"></script>
     <!-- 뉴 이미지 z-index -->
     <script src="js/new.js"></script>
-    <!-- 뉴 슬릭 -->
-    <!-- <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- 슬릭 -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.newslide').slick();
+            $('.newslide').slick({
+                infinite: false,
+                slidesToShow: 4,
+                slidesToScroll: 1
+            });
+            $('.titleani').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots:true,
+                autoplay: true,
+                speed: 1000,
+                fade: true,
+                autoplaySpeed: 3000,
+                arrows: false
+            });
+            $('.productani').slick({
+                infinite: false,
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                arrows: false,
+                responsive: [
+                    {
+                    breakpoint: 1020,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            infinite: false
+                        }
+                    },
+                    {
+                    breakpoint: 770,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: false
+                        }
+                    },
+                    {
+                    breakpoint: 580,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: false
+                        }
+                    }
+                ]
+            });
         });
-    </script> -->
+    </script>
     <!-- 풋터 사이트맵 -->
     <script src="js/footersitemap.js"></script>
 </head>
@@ -58,48 +152,257 @@
                 </ul>
             </div>
             <div class="flex"><a href="" class="search">search</a><a href="" class="ham">ham</a></div>
+            <div class="navwrap">
+                <div class="gnbwrap flex">
+                    <div class="allnew flex flex-column"><strong><a href="">신제품</a></strong><strong><a href="">전체보기</a></strong></div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">아이</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">싱글섀도우</a></li>
+                            <li><a href="">아이팔레트</a></li>
+                            <li><a href="">마스카라</a></li>
+                            <li><a href="">아이라이너</a></li>
+                            <li><a href="">아이브라우</a></li>
+                        </ul>
+                    </div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">립</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">립스틱</a></li>
+                            <li><a href="">틴트</a></li>
+                            <li><a href="">글로우</a></li>
+                            <li><a href="">립펜슬</a></li>
+                            <li><a href="">립케어</a></li>
+                        </ul>
+                    </div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">페이스</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">베이스·프라이머</a></li>
+                            <li><a href="">쿠셔·파운데이션</a></li>
+                            <li><a href="">BB·컨실라</a></li>
+                            <li><a href="">팩트·파우더</a></li>
+                            <li><a href="">컨투어링·하이라이터</a></li>
+                            <li><a href="">블러셔</a></li>
+                        </ul>
+                    </div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">네일</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">네일컬러</a></li>
+                            <li><a href="">네일케어</a></li>
+                            <li><a href="">네일리무버</a></li>
+                        </ul>
+                    </div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">스킨케어</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">토너·패드</a></li>
+                            <li><a href="">에멀전</a></li>
+                            <li><a href="">에센스·세럼</a></li>
+                            <li><a href="">크림·밤</a></li>
+                            <li><a href="">미스트</a></li>
+                            <li><a href="">선케어</a></li>
+                            <li><a href="">세트</a></li>
+                            <li><a href="">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">마스크·팩</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">시트마스크</a></li>
+                            <li><a href="">페이셜팩</a></li>
+                            <li><a href="">패치</a></li>
+                        </ul>
+                    </div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">클렌져</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">페이셜 클렌징</a></li>
+                            <li><a href="">메이크업 클렌징</a></li>
+                            <li><a href="">필링·스크럽</a></li>
+                        </ul>
+                    </div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">바디</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">워시</a></li>
+                            <li><a href="">보습</a></li>
+                            <li><a href="">핸드·풋</a></li>
+                        </ul>
+                    </div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">헤어</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">컬러·스타일링</a></li>
+                            <li><a href="">헤어케어</a></li>
+                        </ul>
+                    </div>
+                    <div class="categori flex flex-column">
+                        <h2 class="h5"><a href="">툴</a></h2>
+                        <ul class="detail flex flex-column">
+                            <li><a href="">전체</a></li>
+                            <li><a href="">브러쉬</a></li>
+                            <li><a href="">퍼프</a></li>
+                            <li><a href="">화장솜·면봉</a></li>
+                            <li><a href="">속눈썹·브라우</a></li>
+                            <li><a href="">공용기</a></li>
+                            <li><a href="">헤어도구</a></li>
+                            <li><a href="">기타</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="brandgnbewrap">
+                <ul class="brandgnb flex">
+                    <li>
+                        <h2 class="h5"><a href="">About ETUDE</a></h2>
+                    </li>
+                    <li>
+                        <h2 class="h5"><a href="">뷰티즌</a></h2>
+                    </li>
+                    <li>
+                        <h2 class="h5"><a href="">지구를 위한 활동</a></h2>
+                    </li>
+                </ul>
+            </div>
         </div>
+        
     </header>
     <!-- 타이틀 영역 -->
-    <div id="title">
-        <div class="wrap">
-            <a href=""></a>
-            <div>
-            <h2 class="h2">무한 조합 퍼스널 컬러 팔레트</h2>
-            <p class="p">나만의 워너비룩을 완성해주는 My Playlist</p>
+    <div id="title" class="control">
+        <div class="wrap titleani">
+            <div class="titleimg titleimgbox1">
+                <div class="explain">
+                    <h2 class="h3">ETUDE x BEARKKU</h2>
+                    <p class="p">베어꾸는 하루종일 귀엽다꾸~♡</p>
+                </div>
+                <a href="" class="pc"><img src="img/title1.jpg" alt="ETUDE x BEARKKU"></a>
+                <a href="" class="mobile"><img src="img/title1mo.jpg" alt="ETUDE x BEARKKU"></a>
+            </div>
+            <div class="titleimg titleimgbox2">
+                <div class="explain">
+                    <h2 class="h3">ETUDE x BEARKKU</h2>
+                    <p class="p">베어꾸는 하루종일 귀엽다꾸~♡</p>
+                </div>
+                <a href="" class="pc"><img src="img/title2.jpg" alt="ETUDE x BEARKKU"></a>
+                <a href="" class="mobile"><img src="img/title2mo.jpg" alt="ETUDE x BEARKKU"></a>
+            </div>
+            <div class="titleimg titleimgbox3">
+                <div class="explain">
+                    <h2 class="h3">CITY EDITION</h2>
+                    <p class="p">매력적인 도시의 느낌을 담아낸 컬러 컬렉션</p>
+                </div>
+                <a href="" class="pc"><img src="img/title3.jpg" alt="CITY EDITION"></a>
+                <a href="" class="mobile"><img src="img/title3mo.jpg" alt="ETUDE x BEARKKU"></a>
+            </div>
+            <div class="titleimg titleimgbox4">
+                <div class="explain">
+                    <h2 class="h3">고수분 물빛 스밈 틴트</h2>
+                    <p class="p">프루티 듀이 틴트 지그재그 단독 런칭</p>
+                </div>
+                <a href="" class="pc"><img src="img/title4.jpg" alt="고수분 물빛 스밈 틴트"></a>
+                <a href="" class="mobile"><img src="img/title4mo.jpg" alt="ETUDE x BEARKKU"></a>
+            </div>
+            <div class="titleimg titleimgbox5">
+                <div class="explain">
+                    <h2 class="h3">무한 조합 퍼스널 컬러 팔레트</h2>
+                    <p class="p">나만의 워너비룩을 완성해주는 My Playlist</p>
+                </div>
+                <a href="" class="pc"><img src="img/title5.jpg" alt="퍼스널 컬러 팔레트"></a>
+                <a href="" class="mobile"><img src="img/title5mo.jpg" alt="ETUDE x BEARKKU"></a>
+            </div>
+            <div class="titleimg titleimgbox6">
+                <div class="explain">
+                    <h2 class="h3">7년 연속 1위! 컬링 마스카라</h2>
+                    <p class="p">깔끔한 컬링, 첫 화장 그대로 픽싱!</p>
+                </div>
+                <a href="" class="pc"><img src="img/title6.jpg" alt="컬링 마스카라"></a>
+                <a href="" class="mobile"><img src="img/title6mo.jpg" alt="ETUDE x BEARKKU"></a>
+            </div>
+            <div class="titleimg titleimgbox7">
+                <div class="explain">
+                    <h2 class="h3">NEW 글로우 픽싱 틴트</h2>
+                    <p class="p">은은한 광이 차오르는 글로잉 틴트</p>
+                </div>
+                <a href="" class="pc"><img src="img/title7.jpg" alt="글로우 픽싱 틴트"></a>
+                <a href="" class="mobile"><img src="img/title7mo.jpg" alt="ETUDE x BEARKKU"></a>
+            </div>
+            <div class="titleimg titleimgbox8">
+                <div class="explain">
+                    <h2 class="h3">민감 피부 자극도 제로</h2>
+                    <p class="p">순정 약산성 5.5 진정 토너</p>
+                </div>
+                <a href="" class="pc"><img src="img/title8.jpg" alt="순정 약산성 5.5 진정 토너"></a>
+                <a href="" class="mobile"><img src="img/title8mo.jpg" alt="ETUDE x BEARKKU"></a>
+            </div>
+            <div class="titleimg titleimgbox9">
+                <div class="explain">
+                    <h2 class="h3">조효진 개발! 그림자 쉐딩</h2>
+                    <p class="p">음영 메이크업 강자로 재.조.명.</p>
+                </div>
+                <a href="" class="pc"><img src="img/title9.jpg" alt="그림자 쉐딩"></a>
+                <a href="" class="mobile"><img src="img/title9mo.jpg" alt="ETUDE x BEARKKU"></a>
+            </div>
+            <div class="titleimg titleimgbox10">
+                <div class="explain">
+                    <h2 class="h3">순정 디렉터 선크림</h2>
+                    <p class="p">#디렉터파이 공동개발 #자차검증 #저자극</p>
+                </div>
+                <a href="" class="pc"><img src="img/title10.jpg" alt="순정 디렉터 선크림"></a>
+                <a href="" class="mobile"><img src="img/title10mo.jpg" alt="ETUDE x BEARKKU"></a>
             </div>
         </div>
     </div>
     <!-- 섹션 프로덕트 -->
-    <section id="product">
+    <section id="product" class="control">
         <div class="wrap padding150">
             <h2 class="hide">PRODUCT</h2>
-            <div class="flex flex-between">
-                <a href="">
-                    <h3 class="h5">픽싱 틴트</h3>
-                    <p class="p">12,000원</p>
-                </a>
-                <a href="">
-                    <h3 class="h5">플레이 컬러 아이즈 #레트로스트릿</h3>
-                    <p class="p">30,000원</p>
-                </a>
-                <a href="">
-                    <h3 class="h5">컬 픽스 마스카라</h3>
-                    <p class="p">15,000원</p>
-                </a>
-                <a href="">
-                    <h3 class="h5">그림자 쉐딩</h3>
-                    <p class="p">20,000원</p>
-                </a>
-                <a href="">
-                    <h3 class="h5">순정 시카 카밍 앰플 에센스</h3>
-                    <p class="p">29,000원</p>
-                </a>
-            </div>
+            <ul class="flex flex-between productani">
+                <li class="product1">
+                    <a href="">
+                        <h3 class="h5">픽싱 틴트</h3>
+                        <p class="p">12,000원</p>
+                    </a>
+                </li>
+                <li class="product2">
+                    <a href="">
+                        <h3 class="h5">플레이 컬러 아이즈 #레트로스트릿</h3>
+                        <p class="p">30,000원</p>
+                    </a>
+                </li>
+                <li class="product3">
+                    <a href="">
+                        <h3 class="h5">컬 픽스 마스카라</h3>
+                        <p class="p">15,000원</p>
+                    </a>
+                </li>
+                <li class="product4">
+                    <a href="">
+                        <h3 class="h5">그림자 쉐딩</h3>
+                        <p class="p">20,000원</p>
+                    </a>
+                </li>
+                <li class="product5">
+                    <a href="">
+                        <h3 class="h5">순정 시카 카밍 앰플 에센스</h3>
+                        <p class="p">29,000원</p>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- 섹션 look -->
-    <section id="look">
+    <section id="look" class="control">
         <div class="wrap flex flex-column flex-align-center">
             <div class="first flex flex-column flex-align-center">
                 <h2 class="h4">Makerup Look</h2>
@@ -116,7 +419,7 @@
         </div>
     </section>
     <!-- 섹션 순정 -->
-    <section id="soonjung">
+    <section id="soonjung" class="control">
         <div class="wrap flex flex-column">
             <div class="first flex flex-column flex-align-center">
                 <h2 class="h4">SOON JUNG</h2>
@@ -196,7 +499,7 @@
         </div>
     </section>
     <!-- 섹션 기프트 -->
-    <section id="gift">
+    <section id="gift" class="control">
         <div class="wrap flex flex-column flex-align-center">
             <div class="first flex flex-column flex-align-center">
                 <h2 class="h4">For Gift</h2>
@@ -212,7 +515,7 @@
         </div>
     </section>
     <!-- 섹션 뉴 -->
-    <section id="new">
+    <section id="new" class="control">
         <div class="wrap flex flex-column flex-align-center">
             <div class="first flex flex-column flex-align-center">
                 <h2 class="h4">What’s New</h2>
@@ -222,10 +525,10 @@
             <div class="container">
                 <div class="hidden">
                     <ul class="list newslide">
-                        <li>
+                        <li class="product newcontents1">
                             <ul class="imgcon">
-                                <li><a href="" class="img"></a></li>
-                                <li><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
                             </ul>
                             <div class="subcontainer">
                                 <h3 class="h5"><a href="">라인 픽스 브러쉬 라이너</a></h3>
@@ -233,10 +536,10 @@
                                 <p class="price p">14,000d원</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product newcontents2">
                             <ul class="imgcon">
-                                <li><a href="" class="img"></a></li>
-                                <li><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
                             </ul>
                             <div class="subcontainer">
                                 <h3 class="h5"><a href="">닥터 마스카라 픽서 포 퍼펙트 래쉬 / 롱래쉬</a></h3>
@@ -244,10 +547,10 @@
                                 <p class="price p">8,000원</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product newcontents3">
                             <ul class="imgcon">
-                                <li><a href="" class="img"></a></li>
-                                <li><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
                             </ul>
                             <div class="subcontainer">
                                 <h3 class="h5"><a href="">순정 2x 베리어 보습 크림 60ml</a></h3>
@@ -255,10 +558,10 @@
                                 <p class="price p">17,000원</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product newcontents4">
                             <ul class="imgcon">
-                                <li><a href="" class="img"></a></li>
-                                <li><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
                             </ul>
                             <div class="subcontainer">
                                 <h3 class="h5"><a href="">순정 시카 카밍 앰플 에센스 50ml</a></h3>
@@ -266,10 +569,10 @@
                                 <p class="price p">29,000원</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product newcontents5">
                             <ul class="imgcon">
-                                <li><a href="" class="img"></a></li>
-                                <li><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
                             </ul>
                             <div class="subcontainer">
                                 <h3 class="h5"><a href="">순정 약산성 5.5 폼 클렌저 150ml</a></h3>
@@ -277,10 +580,10 @@
                                 <p class="price p">12,000원</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="product newcontents6">
                             <ul class="imgcon">
-                                <li><a href="" class="img"></a></li>
-                                <li><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
+                                <li class="imgbox"><a href="" class="img"></a></li>
                             </ul>
                             <div class="subcontainer">
                                 <h3 class="h5"><a href="">순정 수분 베리어 크림 75ml</a></h3>
@@ -290,12 +593,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="arrow"><a href="" class="left">left</a><a href="" class="right">right</a></div>
             </div>
         </div>
     </section>
     <!-- 섹션 sns -->
-    <section id="sns">
+    <section id="sns" class="control">
         <div class="wrap flex">
             <h2 class="h3">FOLLOW US<br />@etude_official</h2>
             <div class="instar">
@@ -327,7 +629,7 @@
         </div>
     </section>
     <!-- 섹션 news -->
-    <section id="news">
+    <section id="news" class="control">
         <div class="wrap flex flex-column">
             <div class="first flex flex-column">
                 <h2 class="h4">News & Event</h2>
@@ -499,7 +801,7 @@
                 <ul class="cowork">
                     <li><a href="">인스타그램</a></li>
                     <li><a href="">페이스북</a></li>
-                    <li><a href="">너튜브</a></li>
+                    <li><a href="">유튜브</a></li>
                     <li><a href="">틱톡</a></li>
                 </ul>
             </div>

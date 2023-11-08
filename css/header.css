@@ -2,19 +2,20 @@ header {
   
 }
 header div.wrap {
-  padding: 50px 100px 20px 100px;
+  padding: 25px 100px 20px 100px;
   justify-content: space-between;
   position: fixed;
   z-index: 2;
   box-sizing: border-box;
-  background-color: rgba(255,255,255,0.6);
+  background-color: transparent;
+  transition: all 1s;
 }
 header div.wrap div.gnb h1 {
   background-image: url(../img/etude.png);
   background-size: contain;
   font-size: 0;
   width: 104px;
-  height: 51px;
+  height: 45px;
 }
 header div.wrap div.gnb h1 a {
   display: none;
@@ -42,12 +43,12 @@ header div.wrap div.gnb ul li:nth-child(1) a:after{
   right: -4px;
   top: -2px;
 }
-header div.wrap div {
+header div.wrap>div {
   display: flex;
   align-items: end;
   gap: 20px;
 }
-header div.wrap div a.search {
+header div.wrap>div a.search {
   width: 25px;
   height: 25px;
   font-size: 0;
@@ -55,6 +56,90 @@ header div.wrap div a.search {
   background-size: contain;
   background-repeat: no-repeat;
 }
-header div.wrap div a.ham {
+header div.wrap>div a.ham {
   
+}
+header div.wrap div.navwrap {
+  position: absolute;
+  width: 1903px;
+  top: 90px;
+  left: 0;
+  height: 336px;
+  background-color: rgba(255,255,255,0.7);
+  display: none;
+}
+header div.wrap div.navwrap div.gnbwrap{
+  z-index: 1;
+  align-items: unset;
+  gap: 35px;
+  position: absolute;
+  top: 0;
+  left: 294px;
+}
+header div.wrap div.navwrap div.gnbwrap div.allnew{
+  row-gap: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+header div.wrap div.navwrap div.gnbwrap div.allnew strong a{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+header div.wrap div.navwrap div.gnbwrap div.allnew strong a::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+header div.wrap div.navwrap div.gnbwrap div.categori{
+  row-gap: 20px;
+}
+header div.wrap div.navwrap div.gnbwrap div.categori h2{
+  font-size: 16px;
+  font-weight: 500;
+}
+header div.wrap div.navwrap div.gnbwrap div.categori ul.detail{
+
+  row-gap: 11px;
+}
+header div.wrap div.navwrap div.gnbwrap div.categori ul.detail li{
+
+}
+header div.wrap div.navwrap div.gnbwrap div.categori ul.detail li a{
+
+  font-size: 14px;
+  font-weight: 400;
+}
+header div.wrap div.brandgnbewrap{
+  
+  position: absolute;
+  width: 1903px;
+  left: 0;
+  top: 90px;
+  background-color: rgba(255,255,255,0.7);
+  height: 45px;
+  display: none;
+}
+header div.wrap div.brandgnbewrap ul.brandgnb{
+  
+  position: absolute;
+  left: 415px;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+header div.wrap div.brandgnbewrap ul.brandgnb li h2 a{
+  
+  font-size: 13px;
+  font-weight: 500;
+}
+.down{
+  background-color: rgba(255,255,255,0.7) !important;;
+}
+.headerbackc{
+  background-color: rgba(255,255,255,0.7) !important;;
 }

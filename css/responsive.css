@@ -1,0 +1,27 @@
+@media screen and (max-width:1380px){
+/*  헤더영역  */
+  header div.wrap {
+  padding: 0 15px 0 15px;
+  width: 100vw;
+  }
+  header div.wrap div.gnb h1 {
+    
+  }
+  header div.wrap div.gnb ul {
+    
+  display: none;
+  }
+}
+@media screen and (max-width:480px){
+  div#title div.wrap div.titleimg a.pc{
+    display: none;
+  }
+  div#title div.wrap div.titleimg a.mobile{
+    display: block;
+    max-width: 100vw;
+  }
+  div#title div.wrap div.titleimg a img{
+    
+  max-width: 100vw;
+  }
+}
